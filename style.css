@@ -1,0 +1,56 @@
+/* liste des couleurs:
+turquoise :#589d8
+jaune :#fccb45
+ */
+
+
+/* BODY */
+h1{
+    font-size:100px;
+    color:#fccb45;
+    font-weight: bolder;
+    text-align: center;
+    padding: 30PX;
+}
+
+
+/* HEADER */
+header{
+    background-color:#589d88;
+    width: 100%;
+}
+
+/*  MAIN*/
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+  
+}
+
+#menu1, #menu2,#menu3,#menu2{
+    height: 600px;
+    width: 500px;
+  margin: 20px;
+  box-shadow: 1px 1px 2px #000;
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 20px;
+}
+
+/* FOOTER */
+footer{
+        background-color:#589d88;
+        width: 100%;
+        padding: 30PX; 
+
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+  color: #fccb45; 
+  font-size: 40PX;
+  
+}
