@@ -3,14 +3,41 @@ turquoise :#589d8
 jaune :#fccb45
  */
 
+ /*  POLICES */
+ @font-face {
+    font-family: 'Hind-Madurai-SemiBold';
+    src:url('../P3-annimations/polices/Hind-Madurai-SemiBold.ttf.woff') format('woff'),
+        url('../P3-annimations/polices/Hind-Madurai-SemiBold.ttf.svg') format('svg'),
+        url('../P3-annimations/polices/Hind-Madurai-SemiBold.ttf.eot'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Condensed';
+    src:url('../P3-annimations/polices/Roboto-Condensed.ttf.woff') format('woff'),
+        url('../P3-annimations/polices/Roboto-Condensed.ttf.svg') format('svg'),
+        url('../P3-annimations/polices/Roboto-Condensed.ttf.eot');
+        
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --------------------------------------- */
+/* ==          page acceuil               */
+/*---------------------------------------- */
+
 
 /* BODY */
+body{
+    font-family: 'Roboto-Condensed';
+}
 h1{
     font-size:100px;
     color:#fccb45;
     font-weight: bolder;
     text-align: center;
-    padding: 30PX;
+    font-family: roboto;
+   
 }
 .container{
     display: flex;
@@ -24,27 +51,33 @@ h1{
 header{
     background-color:#589d88;
     width: 100%;
+    margin-bottom: 50PX;
 }
 
 /*  MAIN*/
 .main-content {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+   
 }
 .menus{
   display: flex;
   flex-flow: wrap row;
+ justify-content: space-evenly;
   
 }
 
-figure{
+figure {
     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
     display: flex;
-  width: 40%;
+    width: 40%;
+    margin-bottom: 50px;
   
 }
-
-
+a, img{
+    max-width: 100%;
+    display: block;
+}
 
 .btn{
     background-color: #589d88;
@@ -52,7 +85,7 @@ figure{
     font-size: 35PX;
     border-radius: 20px;
     padding: 25px;
-    margin: 20%;
+    margin: 40px auto 60px auto;
     border: 0px solid transparent;
    
 
@@ -73,4 +106,22 @@ a{
   color: #fccb45; 
   font-size: 40PX;
   
+}
+/* --------------------------------------- */
+/* ==          Menus               */
+/*---------------------------------------- */
+ 
+
+h2{
+    font-family: Hind-Madurai-SemiBold;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 1px #788a9991;
+    color:#031727cc;
+    font-size:50px ;
+
+}
+img{
+    display: block;
+    text-align: center;
 }
