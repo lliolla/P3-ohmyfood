@@ -84,15 +84,15 @@ a, img{
     display: block;
 }
 
-.btn{
+.dots{
     background-color: #589d88;
     color: #fccb45;
     font-size: 35PX;
+    text-align: center;
     border-radius: 20px;
     padding: 25px;
     margin: 40px auto 60px auto;
     border: 0px solid transparent;
-
 
 }
 
@@ -140,9 +140,55 @@ h2{
 /* --------------------------------------- */
 /* ==          Annimations               */
 /*---------------------------------------- */
+/* tree dots effects */
+
+@keyframes blink {
+  /**
+   debut annimation
+   */
+  0% {
+    opacity: .2;
+  }
+  
+  20% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: .2;
+  }
+}
+
+.dots span {
+  
+  animation-name: blink;
+  
+  animation-duration: 1.4s;
+ 
+  animation-iteration-count: infinite;
+  /**
+   animation tourne en boucle indefinie
+   */
+  animation-fill-mode: both;
+  /**
+   * specifie la maniere dont l'annimation applique les styles à sa cible .
+   *l'opacity est appliqué apres le depart de l'annimationion.
+   */
+}
+
+.dots span:nth-child(2) {
+  /**
+   * debut annimation du 2 point avec .2s, sinon tout s'anime en meme temps
+   */
+  animation-delay: .2s;
+}
+
+.dots span:nth-child(3) {
+  animation-delay: .4s;
+}
 
 /* Typing effect */
-button{
+.dots{
     overflow: hidden;/* le contenu n'est pas révélé avant l'animation*/
     white-space: nowrap; /* laisser le contenu sur une ligne */
     animation: animated-text 2s steps(30,end) 1s 1 normal both;
