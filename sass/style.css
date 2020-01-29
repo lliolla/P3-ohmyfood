@@ -24,19 +24,28 @@ body {
   width: 100%;
 }
 
-/* HEADER */
-header {
-  background-color: #589d88;
-  width: 100%;
-  margin-bottom: 50PX;
-}
-
 h1 {
   font-size: 100px;
   color: #fccb45;
   font-weight: bolder;
   text-align: center;
   font-family: "Hind Madurai", sans-serif;
+}
+
+h2 {
+  font-family: "Hind Madurai", sans-serif;
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 1px 1px #788a9991;
+  color: #031727cc;
+  font-size: 50px;
+}
+
+/* HEADER */
+header {
+  background-color: #589d88;
+  width: 100%;
+  margin-bottom: 50PX;
 }
 
 /*  MAIN*/
@@ -95,21 +104,22 @@ a {
 /* --------------------------------------- */
 /* ==          Menus               */
 /*---------------------------------------- */
-h2 {
-  font-family: "Hind Madurai", sans-serif;
-  text-align: center;
-  width: 100%;
-  text-shadow: 1px 1px 1px #788a9991;
-  color: #031727cc;
-  font-size: 50px;
-}
-
 .menu-detail {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
   padding-bottom: 100PX;
+}
+
+/* --------------------------------------- */
+/* ==          Mentions legales             */
+/*---------------------------------------- */
+.mentions-details {
+  margin: 30px auto;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: justify;
+  width: 80%;
 }
 
 /* --------------------------------------- */

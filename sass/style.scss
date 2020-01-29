@@ -1,22 +1,11 @@
-/* --------------------------------------- */
-/* ==          variables                   */
-/*---------------------------------------- */
-
-/* main menu*/
-
-$color-menu-title:#fccb45;
-$color-menu-bg:#589d88; 
-$color-menu-subtitle:#031727cc;
-
-/*note menu*/
-
-
 
 /* --------------------------------------- */
 /* ==          home menu                   */
 /*---------------------------------------- */
 
 @import "libs/minireset.css";
+@import "libs/variables.scss";
+
 
 
 /* BODY */
@@ -33,6 +22,13 @@ body{
  flex-direction: column;
   width: 100%;
 }
+h1{
+  font-size:100px;
+  color: $color-menu-title;
+  font-weight: bolder;
+  text-align: center;
+  font-family: 'Hind Madurai', sans-serif;
+}
 
 
 
@@ -43,13 +39,7 @@ header{
   width: 100%;
   margin-bottom: 50PX;
 }
-h1{
-  font-size:100px;
-  color: $color-menu-title;
-  font-weight: bolder;
-  text-align: center;
-  font-family: 'Hind Madurai', sans-serif;
-}
+
 
 /*  MAIN*/
 
@@ -111,14 +101,7 @@ text-decoration: none;
 /* ==          Menus               */
 /*---------------------------------------- */
 
-h2{
-  font-family:'Hind Madurai', sans-serif;
-  text-align: center;
-  width: 100%;
-  text-shadow: 1px 1px 1px #788a9991;
-  color: $color-menu-subtitle;
-  font-size:50px ;
-}
+
 
 .menu-detail{
   display: flex;
@@ -128,6 +111,18 @@ h2{
   padding-bottom: 100PX;
 
 }
+
+/* --------------------------------------- */
+/* ==          Mentions legales             */
+/*---------------------------------------- */
+.mentions-details{
+    margin: 30px auto;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: justify;
+    width: 80%;
+  }
+
+
 
 /* --------------------------------------- */
 /* ==          Annimations               */

@@ -1,0 +1,104 @@
+
+@import "sass/libs/minireset.css";
+@import "sass/libs/variables.scss";
+
+
+/* --------------------------------------- */
+/* ==         la note encahntée                  */
+/*---------------------------------------- */
+/* body*/
+body{
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    color: $color-note-content;
+    
+}
+h2{
+    font-family:'Hind Madurai', sans-serif;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 1px #788a9991;
+    color: $color-menu-subtitle;
+    font-size:50px ;
+    margin-top: 30px;
+  }
+  .main-note-menu{
+    background-color: $color-note-bg;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto 15% auto;
+  }
+/* note image top*/
+.note-top{
+    text-align: center;
+    margin: 60px auto 60px auto;
+          &-img{
+              font-size: 100px;
+          }
+          &-titre{
+              font-family: 'Devonshire';
+              font-size: 50px;
+          }
+  }
+
+/* note menu*/
+.note-menu{
+
+    &-subtitle{
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: row;
+        align-items: baseline;
+        
+        &-feature{
+            width: 30%;
+            height: 10px;
+            position: relative;
+            margin: 3%;
+            border-bottom: solid  gray;
+           
+            text-align: center;
+            font-size: 150%;
+            opacity: 1;
+        }
+        &-text{
+            width: auto;
+            font-family: 'Kalam';
+            font-size: 30px;
+            margin: 3%;
+        }
+    }
+    &-plat{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        font-family: 'Caveat', 'cursive';
+        font-size: 25px;
+        
+        &-details{
+            margin: 0px auto 0px 12%;
+        }
+        &-price{
+            margin: 0px 12% 0px auto;
+        }
+    }
+}
+
+/* note image bottom*/
+.note-bottom{
+    display: flex;
+    flex-direction: row;
+    margin: 60px auto 60px auto;
+          &-img{
+              font-size: 40px;
+              margin: 20px;
+          }
+          &-titre{
+              font-family: 'Devonshire';
+              font-size: 40px;
+              margin: 20px;
+          }
+  }

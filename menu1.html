@@ -9,7 +9,9 @@
     <meta name="author" content="Fanny JBT" />
     
     <!-- CSS -->
+    <link rel="stylesheet" href="menus.css" />
     <link rel="stylesheet" href="sass/style.css" />
+    
 
     <!-- polices -->
     <link href="https://fonts.googleapis.com/css?family=Croissant+One&display=swap" rel="stylesheet"> 
@@ -20,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Hind+Madurai&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet"> 
     
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/12a86f8084.js" crossorigin="anonymous"></script>
@@ -27,68 +30,82 @@
 <body>
     <div class="container">
         <header>
-        <a href="index.html"><h1>ohmyfood</h1></a>
+            <a href="index.html"><h1>ohmyfood</h1></a>
         </header>
 
-    <main>
         <h2>La note enchantée</h2>
-        <div class="main-bloc">
-            <i class="fas fa-music menu-start "></i>
-            <p class="menu-title">La note enchantée</p>
-            <div class="menu">
-                <div class="menu-subtitle">
-                    <p class="barre"></p>
-                    <span class="menu-underscore">Prélude</span>
-                    <p class="barre"></p>
-                </div>
-                <div class="menu-plat">
-                    <p>Ravioles de foie gras accompagnés de leur crème à la truffe</p>
-                    <p class="menu-plat-prix">98€</p>
-                </div>
-                <div class="menu-plat">
-                    <p>Caviar osciètre sur blini à la farine de blé noir</p>
-                    <p class="menu-plat-prix">115€</p>
-                </div>
-                <div class="menu-plat">
-                    <p>Homard et espuma de potiron mariné aux zests d'orange</p>
-                    <p class="menu-plat-prix">89€</p>
-                </div>
-                <div class="menu-plat">
-                    <p>Foie gras de canard cuit entier,confiture de figue et pain toasté</p>
-                    <p class="menu-plat-prix">105€</p>
-                </div>
-                <div class="menu-subtitle">
-                    <p class="barre"></p>
-                    <span class="menu-underscore">Point d'orgue</span>
-                    <p class="barre"></p>
-                </div>
-                <div class="menu-plat">
-                    <p>Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</p>
-                    <p class="menu-plat-prix">102€</p>
-                </div>
-                <div class="menu-plat">
-                    <p>Langoustine poêlée, purée de patate douce</p>
-                    <p class="menu-plat-prix">205€</p>
-                </div>
-                <div class="menu-plat">
-                    <p>Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
-                    <p class="menu-plat-prix">169€</p>
-                </div>
-                <div class="menu-subtitle">
-                    <p class="barre"></p>
-                    <span class="menu-underscore">Mouvement final</span>
-                    <p class="barre"></p>
-                </div>
-                <div class="menu-plat">
-                    <p>Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>
-                    <p>Baba au rhum revisité avec son coulis de citron</p>
-                    <p>Tarte au citron meringuée destructurée</p>
-                </div>
-            </div>
-            <div class="menu-note-end"><i class="fas fa-music menu-end"></i> <p class="end"> La note enchantée</p></div>
-        </div>
-    </main>
+        <main>
+            <div class="main-note-menu">
+                <section class="note-top">
+                    <div class="note-top-img">
+                        <i class="fas fa-music menu-start "></i>
+                    </div>
+                    <div class="note-top-titre">
+                        <p class="menu-title">La note enchantée</p>
+                    </div>
+                </section>
 
+                <section class="note-menu">
+                    <div class="note-menu-subtitle">
+                        <div class="note-menu-subtitle-feature"></div>
+                        <div class="note-menu-subtitle-text">Prélude</div>
+                        <div class="note-menu-subtitle-feature"></div>
+                    </div>
+                    <div class="note-menu-plat">
+                        <p class="note-menu-plat-details">Ravioles de foie gras accompagnés de leur crème à la truffe</p>
+                        <p class="note-menu-plat-price">98€</p>
+                    </div>
+                    <div class="note-menu-plat">
+                        <p class="note-menu-plat-details">Caviar osciètre sur blini à la farine de blé noir</p>
+                        <p class="note-menu-plat-price">115€</p>
+                    </div>
+                    <div class="note-menu-plat">
+                        <p class="note-menu-plat-details">Homard et espuma de potiron mariné aux zests d'orange </p>
+                        <p class="note-menu-plat-price">89€ </p>
+                    </div>
+                    <div class="note-menu-plat">
+                        <p class="note-menu-plat-details">Foie gras de canard cuit entier,confiture de figue et pain toasté </p>
+                        <p class="note-menu-plat-price">105€ </p>
+                    </div>
+                    <div class="note-menu-subtitle">
+                        <div class="note-menu-subtitle-feature"></div>
+                        <div class="note-menu-subtitle-text">Point d'orgue</div>
+                        <div class="note-menu-subtitle-feature"></div>
+                    </div>
+                    <div class="note-menu-plat">
+                        <p class="note-menu-plat-details">Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave </p>
+                        <p class="note-menu-plat-price">102€ </p>
+                    </div>
+                    <div class="note-menu-plat">
+                        <p class="note-menu-plat-details">Langoustine poêlée, purée de patate douce </p>
+                        <p class="note-menu-plat-price">205€ </p>
+                    </div>
+                    <div class="note-menu-plat">
+                        <p class="note-menu-plat-details">Mijoté de queue de boeuf et riz sauvage aux zests de citron </p>
+                        <p class="note-menu-plat-price">169€ </p>
+                    </div>
+                    <div class="note-menu-subtitle">
+                        <div class="note-menu-subtitle-feature"></div>
+                        <div class="note-menu-subtitle-text">Mouvement final</div>
+                        <div class="note-menu-subtitle-feature"></div>
+                    </div>
+                    <div class="note-menu-plat">
+                        <p class="note-menu-plat-details">Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>  
+                        <p class="note-menu-plat-details">Baba au rhum revisité avec son coulis de citron</p>
+                        <p class="note-menu-plat-details">Tarte au citron meringuée destructurée</p>
+                      
+                    </div>
+                </section>
+                <section class="note-bottom">
+                    <div class="note-bottom-img">
+                        <i class="fas fa-music menu-start "></i>
+                    </div>
+                    <div class="note-bottom-titre">
+                        <p class="note-menu-title">La note enchantée</p>
+                    </div>
+                </section>
+            </div>
+        </main>
     <footer>  
         <div class="footer-content">
             <a href="mentions.html"> Mentions Legales </a>
