@@ -1,0 +1,240 @@
+/* --------------------------------------- */
+/* ==          variables                   */
+/*---------------------------------------- */
+
+/* main menu*/
+
+$color-menu-title:#fccb45;
+$color-menu-bg:#589d88; 
+$color-menu-subtitle:#031727cc;
+
+/*note menu*/
+
+
+
+/* --------------------------------------- */
+/* ==          home menu                   */
+/*---------------------------------------- */
+
+@import "libs/minireset.css";
+
+
+/* BODY */
+html{
+  width: 100%;
+}
+body{
+  font-family:'Roboto Condensed', sans-serif;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+ flex-direction: column;
+  width: 100%;
+}
+
+
+
+/* HEADER */
+
+header{
+  background-color: $color-menu-bg;
+  width: 100%;
+  margin-bottom: 50PX;
+}
+h1{
+  font-size:100px;
+  color: $color-menu-title;
+  font-weight: bolder;
+  text-align: center;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+/*  MAIN*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100PX;
+    &-menus{
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: space-evenly;
+        &-figure{
+          box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+          display: flex;
+          width: 40%;
+          margin-bottom: 50px;
+        }
+      }
+    &-shortly{
+      background-color: $color-menu-bg;
+      color: $color-menu-title;
+      font-size: 35PX;
+      text-align: center;
+      border-radius: 20px;
+      padding: 25px;
+      margin: 40px auto 60px auto;
+      border: 0px solid transparent;
+
+    }    
+}
+
+a, img{
+  max-width: 100%;
+  display: block;
+}
+
+
+
+/* FOOTER */
+footer{
+      background-color: $color-menu-bg;
+      width: 100%;
+      padding: 30PX;
+      position: fixed;
+      bottom: 0;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+}
+
+a{
+color: $color-menu-title;
+font-size: 40PX;
+text-decoration: none;
+
+}
+/* --------------------------------------- */
+/* ==          Menus               */
+/*---------------------------------------- */
+
+h2{
+  font-family:'Hind Madurai', sans-serif;
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 1px 1px #788a9991;
+  color: $color-menu-subtitle;
+  font-size:50px ;
+}
+
+.menu-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  padding-bottom: 100PX;
+
+}
+
+/* --------------------------------------- */
+/* ==          Annimations               */
+/*---------------------------------------- */
+/* tree dots effects */
+
+@keyframes blink {
+/**
+ debut annimation
+ */
+0% {
+  opacity: .2;
+}
+
+20% {
+  opacity: 1;
+}
+
+100% {
+  opacity: .2;
+}
+}
+
+.content-shortly span {
+
+animation-name: blink;
+
+animation-duration: 1.4s;
+
+animation-iteration-count: infinite;
+/**
+ animation tourne en boucle indefinie
+ */
+animation-fill-mode: both;
+/**
+ * specifie la maniere dont l'annimation applique les styles à sa cible .
+ *l'opacity est appliqué apres le depart de l'annimationion.
+ */
+}
+
+.content-shortly span:nth-child(2) {
+/**
+ * debut annimation du 2 point avec .2s, sinon tout s'anime en meme temps
+ */
+animation-delay: .2s;
+}
+
+.content-shortly span:nth-child(3) {
+animation-delay: .4s;
+}
+
+/* Typing effect */
+.content-shortly{
+  overflow: hidden;/* le contenu n'est pas révélé avant l'animation*/
+  white-space: nowrap; /* laisser le contenu sur une ligne */
+  animation: animated-text 2s steps(30,end) 1s 1 normal both;
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 472px;}
+}
+
+
+/* Wiggle */
+.wiggle:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/* Effets menus */
+/* ne pas depasser le cadre */
+figure {
+overflow: hidden;
+}
+
+img {
+-webkit-transform: scale(1);
+  transform: scale(1);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+opacity: 1;
+}
+img:hover {
+-webkit-transform: scale(1.3);
+transform: scale(1.2);
+opacity: 0.5;
+}
+
+
