@@ -4,12 +4,12 @@
 /* ==         la note encahntée                  */
 /*---------------------------------------- */
 /* body*/
-body {
+ /*body {
   font-family: "Roboto Condensed";
   font-size: 20px;
   color: #3C1218;
-}
-
+} */
+/* 
 h2 {
   font-family: "Hind Madurai", sans-serif;
   text-align: center;
@@ -18,53 +18,49 @@ h2 {
   color: #031727cc;
   font-size: 50px;
   margin-top: 30px;
-}
-
+} */
+ /* 
 .main-note-menu {
-  background-color: #f1653298;
-  width: 80%;
+  background-color: #f0967659;
+ width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin: 5% auto 15% auto;
+  margin: 5% auto 15% auto; */
 }
 
 /* note image top*/
-.note-top {
+/* .note-top {
   text-align: center;
   margin: 60px auto 60px auto;
-}
-.note-top-img {
+} */
+/* .note-top-img {
   font-size: 100px;
-}
-.note-top-titre {
+} */
+/* .note-top-titre {
   font-family: "Devonshire";
   font-size: 50px;
-}
+} */
 
 /* note menu*/
 .note-menu-subtitle {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
+  /* display: flex;
+  justify-content: space-around;
+  flex-direction: row; */
   align-items: baseline;
 }
-.note-menu-subtitle-feature {
-  width: 30%;
+/* .note-menu-subtitle-feature {
+  width: 25%;
   height: 10px;
   position: relative;
-  margin: 3%;
   border-bottom: solid gray;
-  text-align: center;
   font-size: 150%;
   opacity: 1;
-}
-.note-menu-subtitle-text {
-  width: auto;
+} */
+/* .note-menu-subtitle-text {
   font-family: "Kalam";
   font-size: 30px;
-  margin: 3%;
-}
+} */
 .note-menu-plat {
   width: 100%;
   display: flex;
@@ -73,12 +69,12 @@ h2 {
   font-family: "Caveat", "cursive";
   font-size: 25px;
 }
-.note-menu-plat-details {
+/* .note-menu-plat-details {
   margin: 0px auto 0px 12%;
 }
 .note-menu-plat-price {
   margin: 0px 12% 0px auto;
-}
+} */
 
 /* note image bottom*/
 .note-bottom {
