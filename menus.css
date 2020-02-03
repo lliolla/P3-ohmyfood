@@ -1,15 +1,8 @@
 @charset "UTF-8";
 @import "sass/libs/minireset.css";
 /* --------------------------------------- */
-/* ==         la note encahntée                  */
+/* ==          structure menus             */
 /*---------------------------------------- */
-/* body*/
- /*body {
-  font-family: "Roboto Condensed";
-  font-size: 20px;
-  color: #3C1218;
-} */
-/* 
 h2 {
   font-family: "Hind Madurai", sans-serif;
   text-align: center;
@@ -18,78 +11,96 @@ h2 {
   color: #031727cc;
   font-size: 50px;
   margin-top: 30px;
-} */
- /* 
-.main-note-menu {
-  background-color: #f0967659;
- width: 80%;
+}
+
+.main-menu {
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin: 5% auto 15% auto; */
-}
-
-/* note image top*/
-/* .note-top {
+  margin: 5% auto 15% auto;
   text-align: center;
   margin: 60px auto 60px auto;
-} */
-/* .note-top-img {
-  font-size: 100px;
-} */
-/* .note-top-titre {
-  font-family: "Devonshire";
-  font-size: 50px;
-} */
-
-/* note menu*/
-.note-menu-subtitle {
-  /* display: flex;
-  justify-content: space-around;
-  flex-direction: row; */
-  align-items: baseline;
 }
-/* .note-menu-subtitle-feature {
-  width: 25%;
-  height: 10px;
-  position: relative;
-  border-bottom: solid gray;
-  font-size: 150%;
-  opacity: 1;
-} */
-/* .note-menu-subtitle-text {
-  font-family: "Kalam";
-  font-size: 30px;
-} */
-.note-menu-plat {
-  width: 100%;
+.main-menu .menu-top {
+  margin: 50px;
+}
+.main-menu .menu-top-img {
+  font-size: 100px;
+}
+.main-menu .menu-top-title {
+  font-family: "Devonshire";
+  font-size: 100px;
+}
+.main-menu .menu-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-menu .menu-middle-content {
+  margin-bottom: 50px;
+}
+.main-menu .menu-middle-content-title {
+  margin-bottom: 50px;
+}
+.main-menu .menu-middle-content-plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-menu .menu-middle-content-plat-details {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  font-family: "Caveat", "cursive";
-  font-size: 25px;
+  padding: 10px;
 }
-/* .note-menu-plat-details {
+.main-menu .menu-middle-content-plat-details-text {
   margin: 0px auto 0px 12%;
 }
-.note-menu-plat-price {
+.main-menu .menu-middle-content-plat-details-price {
   margin: 0px 12% 0px auto;
-} */
-
-/* note image bottom*/
-.note-bottom {
+}
+.main-menu .menu-bottom {
   display: flex;
-  flex-direction: row;
-  margin: 60px auto 60px auto;
+  justify-content: center;
+  margin-bottom: 50px;
 }
-.note-bottom-img {
-  font-size: 40px;
-  margin: 20px;
+.main-menu .menu-bottom-img {
+  margin: 10px;
+  font-size: 50px;
+  color: #f0967659;
 }
-.note-bottom-titre {
+.main-menu .menu-bottom-titre {
   font-family: "Devonshire";
-  font-size: 40px;
-  margin: 20px;
+  font-size: 30px;
+  margin: 10px;
 }
 
-/*# sourceMappingURL=menus.css.map */
+/* --------------------------------------- */
+/* ==     Style la note enchantée          */
+/*---------------------------------------- */
+body {
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  color: #3C1218;
+}
+
+.main-menu {
+  background-color: #f0967659;
+}
+
+h3.menu-middle-content-title {
+  font-family: "Kalam";
+  font-size: 40px;
+}
+
+.menu-middle-content-plat {
+  font-family: "Caveat", "cursive";
+  font-size: 30px;
+}
+
+i.fas {
+  color: #f1a644c9;
+}
+
+/*# sourceMappingURL=menuscopie.css.map */
