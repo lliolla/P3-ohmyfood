@@ -9,7 +9,7 @@ h2 {
   width: 100%;
   text-shadow: 1px 1px 1px #788a9991;
   color: #031727cc;
-  font-size: 50px;
+  font-size: 70px;
   margin-top: 30px;
 }
 
@@ -20,10 +20,10 @@ h2 {
   flex-direction: column;
   margin: 5% auto 15% auto;
   text-align: center;
-  margin: 60px auto 60px auto;
+  margin: 100px auto 300px auto;
 }
 .main-menu .menu-top {
-  margin: 50px;
+  margin: 50px 50px 50px 50px;
 }
 .main-menu .menu-top-img {
   font-size: 100px;
@@ -38,6 +38,8 @@ h2 {
   justify-content: space-around;
 }
 .main-menu .menu-middle-content {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 50px;
 }
 .main-menu .menu-middle-content-title {
@@ -46,19 +48,19 @@ h2 {
 .main-menu .menu-middle-content-plat {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .main-menu .menu-middle-content-plat-details {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: baseline;
-  padding: 10px;
+  margin: 0px 150PX;
 }
 .main-menu .menu-middle-content-plat-details-text {
-  margin: 0px auto 0px 12%;
+  padding: 0px 80px 0px 15px;
 }
 .main-menu .menu-middle-content-plat-details-price {
-  margin: 0px 12% 0px auto;
+  padding: 0px 15px 0px 80px;
 }
 .main-menu .menu-bottom {
   display: flex;
@@ -68,7 +70,6 @@ h2 {
 .main-menu .menu-bottom-img {
   margin: 10px;
   font-size: 50px;
-  color: #f0967659;
 }
 .main-menu .menu-bottom-titre {
   font-family: "Devonshire";
@@ -79,28 +80,63 @@ h2 {
 /* --------------------------------------- */
 /* ==     Style la note enchantée          */
 /*---------------------------------------- */
-body {
-  font-family: "Roboto Condensed";
-  font-size: 20px;
-  color: #3C1218;
-}
-
-.main-menu {
+.note-main-menu {
   background-color: #f0967659;
 }
 
-h3.menu-middle-content-title {
+h3.note-menu-middle-content-title {
   font-family: "Kalam";
-  font-size: 40px;
+  font-size: 50px;
 }
 
-.menu-middle-content-plat {
+.note-menu-middle-content-plat {
   font-family: "Caveat", "cursive";
   font-size: 30px;
 }
 
-i.fas {
-  color: #f1a644c9;
+.fas {
+  background-image: linear-gradient(to top, #fd4027c9, #fdc427c9);
 }
 
-/*# sourceMappingURL=menuscopie.css.map */
+/* --------------------------------------- */
+/* ==     Style chic                      */
+/*---------------------------------------- */
+.chic-title {
+  font-family: "Croissant One", cursive;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.chic-main-menu {
+  background-color: rgba(241, 241, 245, 0.726);
+  font-family: "Roboto Condensed";
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.chic-menu-middle-content1 {
+  color: #C77412;
+}
+
+.chic-menu-middle-content2 {
+  color: #A56799;
+}
+
+.chic-menu-middle-content3 {
+  color: #905BFD;
+}
+
+.chic-menu-middle-content-title {
+  font-family: "Gelasio", serif;
+  font-weight: bold;
+}
+
+.chic-menu-bottom {
+  visibility: hidden;
+}
+
+/* --------------------------------------- */
+/* ==     Style delice                      */
+/*---------------------------------------- */
+
+/*# sourceMappingURL=menus.css.map */

@@ -13,7 +13,7 @@ h2{
     width: 100%;
     text-shadow: 1px 1px 1px #788a9991;
     color: $color-menu-subtitle;
-    font-size:50px ;
+    font-size:70px ;
     margin-top: 30px;
   }
 
@@ -24,9 +24,9 @@ h2{
     flex-direction: column;
     margin: 5% auto 15% auto;
     text-align: center;
-    margin: 60px auto 60px auto;
+    margin: 100px auto 300px auto;
       .menu-top{
-        margin: 50px;
+        margin: 50px  50px 50px 50px;
         &-img{
             font-size: 100px;
         }
@@ -51,15 +51,13 @@ h2{
             &-plat{ 
               display: flex;
               flex-direction: column;
-              margin:auto;
-
                 &-details{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: baseline;
-                  
-                    padding: 0px 0px 15px 0px ;
+                    margin: 0px 150PX;
+
                     &-text{
                       padding: 0px 80px 0px 15px ;
                     }
@@ -90,19 +88,15 @@ h2{
 /* --------------------------------------- */
 /* ==     Style la note enchantée          */
 /*---------------------------------------- */
-body{
-    font-family: "Roboto Condensed";
-    font-size: 20px;
-    color: #3C1218;  
-}
-.main-menu{
+
+.note-main-menu{
     background-color: #f0967659; 
 }
-h3.menu-middle-content-title{
+h3.note-menu-middle-content-title{
     font-family: "Kalam";
-    font-size: 40px;
+    font-size: 50px;
 }
-.menu-middle-content-plat {
+.note-menu-middle-content-plat {
     font-family: "Caveat", "cursive";
     font-size: 30px;
 }
@@ -111,4 +105,40 @@ h3.menu-middle-content-title{
 }
 /* --------------------------------------- */
 /* ==     Style chic                      */
+/*---------------------------------------- */
+// .chic-degrade {
+//   font-size: 50px;
+//   background: -webkit-gradient(linear, left bottom,  right top, from(#C77412), to(#905BFD));
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+.chic-title{
+  font-family: 'Croissant One', cursive;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+.chic-main-menu {
+  background-color: $color-chic-bg; 
+  font-family: "Roboto Condensed";
+  font-weight: lighter;
+  font-size: 30px;
+}
+.chic-menu-middle-content1{
+  color:$color-chic-content1 ;
+}
+.chic-menu-middle-content2{
+  color:$color-chic-content2 ;
+}
+.chic-menu-middle-content3{
+  color:$color-chic-content3 ;
+}
+.chic-menu-middle-content-title{
+  font-family:'Gelasio', serif;
+  font-weight:bold;
+}
+.chic-menu-bottom{
+  visibility: hidden;
+}
+/* --------------------------------------- */
+/* ==     Style delice                      */
 /*---------------------------------------- */
