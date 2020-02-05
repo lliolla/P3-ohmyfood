@@ -42,11 +42,23 @@ h2{
           &-content{
             display: flex;
             flex-direction: column;
-              margin-bottom: 50px;
-
+              margin-bottom: 100px;
             &-title{
-              margin-bottom: 50px;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: baseline;
+              margin-bottom: 30px;
 
+              .underline{/* class generique annimation*/
+                width: 40%;
+                height: 15px;
+                display: inline-block;/* alignement a gauche text*/
+              } 
+              .title-annim{
+                width: 20%;
+              }/* class generique annimation*/
+              
             }
             &-plat{ 
               display: flex;
@@ -56,7 +68,7 @@ h2{
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: baseline;
-                    margin: 0px 150PX;
+                    margin: 15px 150PX;
 
                     &-text{
                       padding: 0px 80px 0px 15px ;
@@ -78,31 +90,61 @@ h2{
           }
           &-titre{
             font-family: "Devonshire";
-            font-size: 30px;
+            font-size: 40px;
             margin: 10px;
           }
 
       }
   }
 
+/* annimation barre soulignement*/
+.underline1-annim {
+  margin: 0px 20px;
+  border-bottom: 5PX solid rgba(60, 18, 24, 0.719);
+  border-bottom-left-radius: 30px 20px;
+ }
+
+.underline1-annim {
+  margin: 0px 20px;
+  border-bottom: 5PX solid #3C1218;
+  border-bottom-left-radius: 30px 20px;
+  display:inline-block;
+  transform: scale(0.15);
+  transform-origin: 0% 50%;
+  transition-property: transform;
+  transition-duration: 400ms;
+  &:hover{
+    transform: scale(1);
+  }
+ }  
+ 
+ 
 /* --------------------------------------- */
 /* ==     Style la note enchantée          */
 /*---------------------------------------- */
 
 .note-main-menu{
-    background-color: #f0967659; 
+    background-color: #f0967659;
+    color: $color-note-content; 
+}
+h3.note-menu-top-title{
+  font-size: 60px;
 }
 h3.note-menu-middle-content-title{
     font-family: "Kalam";
-    font-size: 50px;
+    font-size: 40px;
 }
 .note-menu-middle-content-plat {
     font-family: "Caveat", "cursive";
-    font-size: 30px;
+    font-size: 35px;
 }
 .fas{
   background-image: linear-gradient(to top,#fd4027c9,#fdc427c9);
 }
+
+
+
+
 /* --------------------------------------- */
 /* ==     Style chic                      */
 /*---------------------------------------- */
