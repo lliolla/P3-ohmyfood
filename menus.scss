@@ -26,7 +26,7 @@ h2{
     text-align: center;
     margin: 100px auto 300px auto;
       .menu-top{
-        margin: 50px  50px 50px 50px;
+        margin: 50px 50px 90px 50px;
         &-img{
             font-size: 100px;
         }
@@ -83,14 +83,14 @@ h2{
       .menu-bottom{
           display: flex;
           justify-content: center;
-          margin-bottom: 50px;
+          margin-bottom: 70px;
           &-img{
               margin: 10px;
               font-size: 50px;
           }
           &-titre{
             font-family: "Devonshire";
-            font-size: 40px;
+            font-size: 50px;
             margin: 10px;
           }
 
@@ -98,27 +98,27 @@ h2{
   }
 
 /* annimation barre soulignement*/
-.underline1-annim {
-  margin: 0px 20px;
-  border-bottom: 5PX solid rgba(60, 18, 24, 0.719);
-  border-bottom-left-radius: 30px 20px;
- }
 
-.underline1-annim {
+h3.annim-title{
+  position: relative;
   margin: 0px 20px;
-  border-bottom: 5PX solid #3C1218;
-  border-bottom-left-radius: 30px 20px;
-  display:inline-block;
-  transform: scale(0.15);
-  transform-origin: 0% 50%;
-  transition-property: transform;
-  transition-duration: 400ms;
-  &:hover{
-    transform: scale(1);
+  &::after{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 3px;
+      right: 0;
+      background: $color-note-content;
+      transition: width 1s ease;
   }
- }  
- 
- 
+  &:hover::after{
+      width: 100%;
+      left: 0;
+  }
+}
+
+
 /* --------------------------------------- */
 /* ==     Style la note enchantée          */
 /*---------------------------------------- */
@@ -142,11 +142,17 @@ h3.note-menu-middle-content-title{
   background-image: linear-gradient(to top,#fd4027c9,#fdc427c9);
 }
 
+.note-underline{
+   width: 30%;
+   
+   border-bottom: 5PX solid rgba(60, 18, 24, 0.719);
+  
+}
 
 
 
 /* --------------------------------------- */
-/* ==     Style chic                      */
+/* ==     Style chic                   */
 /*---------------------------------------- */
 // .chic-degrade {
 //   font-size: 50px;
