@@ -8,4 +8,4 @@ lien vers git hub page
 
 intitulé : Dynamisez une page web avec des animations Css
 
-lien vers git hub page https://lliolla.github.io/P2-cv-web/
+lien vers git hub page https://lliolla.github.io/P3-ohmyfood/
