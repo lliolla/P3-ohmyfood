@@ -1,26 +1,26 @@
 @charset "UTF-8";
 /* --------------------------------------- */
-/* ==          variables                   */
-/*---------------------------------------- */
-/* main menu*/
-/*note menu*/
-/* --------------------------------------- */
 /* ==          home menu                   */
 /*---------------------------------------- */
-@import "libs/minireset.css";
+@import url(c:\wamp64\www\2-PROJET\P3-annimations - Copie\sass\libs\minireset.css);
 /* BODY */
 html {
   width: 100%;
 }
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   width: 100%;
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
@@ -29,16 +29,7 @@ h1 {
   color: #fccb45;
   font-weight: bolder;
   text-align: center;
-  font-family: "Hind Madurai", sans-serif;
-}
-
-h2 {
-  font-family: "Hind Madurai", sans-serif;
-  text-align: center;
-  width: 100%;
-  text-shadow: 1px 1px 1px #788a9991;
-  color: #031727cc;
-  font-size: 50px;
+  font-family: 'Hind Madurai', sans-serif;
 }
 
 /* HEADER */
@@ -50,21 +41,39 @@ header {
 
 /*  MAIN*/
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 100PX;
 }
+
 .content-menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
+
 .content-menus-figure {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 40%;
   margin-bottom: 50px;
 }
+
 .content-shortly {
   background-color: #589d88;
   color: #fccb45;
@@ -91,8 +100,11 @@ footer {
 }
 
 .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 a {
@@ -105,9 +117,16 @@ a {
 /* ==          Menus               */
 /*---------------------------------------- */
 .menu-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 100px;
   padding-bottom: 100PX;
 }
@@ -126,43 +145,64 @@ a {
 /* ==          Annimations               */
 /*---------------------------------------- */
 /* tree dots effects */
-@keyframes blink {
+@-webkit-keyframes blink {
   /**
-   debut annimation
-   */
+ debut annimation
+ */
   0% {
-    opacity: 0.2;
+    opacity: .2;
   }
   20% {
     opacity: 1;
   }
   100% {
-    opacity: 0.2;
+    opacity: .2;
   }
 }
+@keyframes blink {
+  /**
+ debut annimation
+ */
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
 .content-shortly span {
-  animation-name: blink;
-  animation-duration: 1.4s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   /**
-   animation tourne en boucle indefinie
-   */
-  animation-fill-mode: both;
+ animation tourne en boucle indefinie
+ */
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   /**
-   * specifie la maniere dont l'annimation applique les styles à sa cible .
-   *l'opacity est appliqué apres le depart de l'annimationion.
-   */
+ * specifie la maniere dont l'annimation applique les styles à sa cible .
+ *l'opacity est appliqué apres le depart de l'annimationion.
+ */
 }
 
 .content-shortly span:nth-child(2) {
   /**
-   * debut annimation du 2 point avec .2s, sinon tout s'anime en meme temps
-   */
-  animation-delay: 0.2s;
+ * debut annimation du 2 point avec .2s, sinon tout s'anime en meme temps
+ */
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
 }
 
 .content-shortly span:nth-child(3) {
-  animation-delay: 0.4s;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
 /* Typing effect */
@@ -171,7 +211,17 @@ a {
   /* le contenu n'est pas révélé avant l'animation*/
   white-space: nowrap;
   /* laisser le contenu sur une ligne */
-  animation: animated-text 2s steps(30, end) 1s 1 normal both;
+  -webkit-animation: animated-text 2s steps(30, end) 1s 1 normal both;
+          animation: animated-text 2s steps(30, end) 1s 1 normal both;
+}
+
+@-webkit-keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 472px;
+  }
 }
 
 @keyframes animated-text {
@@ -182,13 +232,36 @@ a {
     width: 472px;
   }
 }
+
 /* Wiggle */
 .wiggle:hover {
-  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 @keyframes shake {
@@ -209,6 +282,7 @@ a {
     transform: translate3d(4px, 0, 0);
   }
 }
+
 /* Effets menus */
 /* ne pas depasser le cadre */
 figure {
@@ -218,8 +292,8 @@ figure {
 img {
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
   opacity: 1;
 }
 
@@ -228,5 +302,4 @@ img:hover {
   transform: scale(1.2);
   opacity: 0.5;
 }
-
 /*# sourceMappingURL=style.css.map */
