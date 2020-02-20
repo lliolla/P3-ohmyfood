@@ -1,0 +1,339 @@
+
+@import "sass/libs/minireset.css";
+@import "sass/libs/variables.scss";
+
+/* --------------------------------------- */
+/* ==          structure menus             */
+/*---------------------------------------- */
+
+
+h2{
+    font-family:'Hind Madurai', sans-serif;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 1px #788a9991;
+    color: $color-menu-subtitle;
+    font-size:60px ;
+    margin-top: 30px;
+  }
+
+  .main-menu{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto 15% auto;
+    text-align: center;
+    margin: 100px auto 300px auto;
+      .menu-top{
+        margin: 50px 50px 0px 50px;
+        &-img{
+            font-size: 100px;
+        }
+        &-title{
+            font-family: "Devonshire";
+            font-size: 100px;
+        }
+      }
+      .menu-middle{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+          &-content{
+            display: flex;
+            flex-direction: column;
+              margin-bottom: 100px;
+            &-title{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: baseline; 
+              margin: 20px 40PX;
+              
+            }
+            &-plat{ 
+              display: flex;
+              flex-direction: column;
+                &-details{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    margin: 0px 80PX;
+                    text-align: start;
+                    &-text{
+                      padding: 0px 0px 0px 15px ;
+                      margin-bottom: 0PX;
+                    }
+                    &-price{
+                      padding: 0px 15px 0px 80px ; 
+                      margin-bottom: 0PX; 
+                    }
+                }
+            }
+          }
+      }
+      .menu-bottom{
+          display: flex;
+          justify-content: center;
+          margin-bottom: 70px;
+          align-items: center;
+          &-img{
+              margin: 10px;
+              font-size: 50px;
+          }
+          &-titre{
+            font-family: "Devonshire";
+            font-size: 50px;
+            margin: 10px;
+          }
+      } 
+  }
+
+/* --------------------------------------- */
+/* ==          annimations            */
+/*---------------------------------------- */
+
+h3.annim-title{
+  &-note{
+    position: relative;
+    margin: 0px 20px;
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        background: $color-note-content;
+        width: 0;
+        height: 3px;
+        right: 0;
+        transition: width 1s ease;
+      }
+    &:hover::after{
+        width: 100%;
+        left: 0;
+    }
+  }
+  &-chic1{
+    position: relative;
+    margin: 0px 20px;
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        background: $color-chic-content1;
+        width: 0;
+        height: 3px;
+        right: 0;
+        transition: width 1s ease;
+      }
+    &:hover::after{
+        width: 100%;
+        left: 0;
+    }
+  }
+  &-chic2{
+      position: relative;
+      margin: 0px 20px;
+      &::after{
+          content: '';
+          position: absolute;
+          display: block;
+          background: $color-chic-content2;
+          width: 0;
+          height: 3px;
+          right: 0;
+          transition: width 1s ease;
+        }
+      &:hover::after{
+          width: 100%;
+          left: 0;
+      }
+  }
+  &-chic3{
+        position: relative;
+        margin: 0px 20px;
+        &::after{
+            content: '';
+            position: absolute;
+            display: block;
+            background: $color-chic-content3;
+            width: 0;
+            height: 3px;
+            right: 0;
+            transition: width 1s ease;
+          }
+        &:hover::after{
+            width: 100%;
+            left: 0;
+        }  
+  }
+  &-delice{
+    position: relative;
+    margin: 0px 20px;
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        background: $color-delice-content1;
+        width: 0;
+        height: 3px;
+        right: 0;
+        transition: width 1s ease;
+      }
+    &:hover::after{
+        width: 100%;
+        left: 0;
+    }
+  }
+  &-palette{
+    position: relative;
+    margin: 0px 20px;
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        background:$color-palette-content1;
+        width: 0;
+        height: 3px;
+        right: 0;
+        transition: width 1s ease;
+      }
+    &:hover::after{
+        width: 100%;
+        left: 0;
+    }
+  }
+}
+
+/* --------------------------------------- */
+/* ==     Style                            */
+/*---------------------------------------- */
+
+/* style des barres de bloc titre*/
+
+.underline{
+  width: 30%;
+  &-note{
+    border-bottom: 5PX solid rgba(60, 18, 24, 0.719);
+  }
+  &-chic1{
+    border-bottom: 5PX solid $color-chic-content1;;
+  }
+  &-chic2{
+    border-bottom: 5PX solid $color-chic-content2;;
+  }
+  &-chic3{
+    border-bottom: 5PX solid $color-chic-content3;;
+  }
+  &-delice{
+    border-bottom: 5PX solid $color-delice-content1;;
+  }
+  &-palette{
+    border-bottom: 5PX solid $color-palette-content1;;
+  }
+}
+
+/* style des menus*/
+
+.main-menu{
+    &-note{
+      background-color: #f0967659;
+      color: $color-note-content;
+    } 
+    &-chic{
+      background-color: $color-chic-bg; 
+      font-family: "Roboto Condensed";
+      font-weight: lighter;
+      font-size: 30px;
+    }
+    &-delice{
+      font-family: 'Caveat', cursive;
+      font-size: 39px;
+      color: $color-delice-content2;
+      background-color:$color-delice-bg;
+    }
+    &-palette{
+      font-family: 'Caveat', cursive;
+      font-size: 39px;
+      color: $color-palette-content2;
+      background-color:$color-palette-bg1;
+    }
+
+}
+.menu-top-title{
+  &-note{
+    font-size: 60px;
+  }
+  &-chic{
+    font-family: 'Croissant One', cursive;
+    font-size: 60px;
+    letter-spacing: 2px;
+    background: -webkit-linear-gradient(top left, $color-chic-content1, $color-chic-content3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &-delice{
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+    background: -webkit-linear-gradient(top left,$color-delice-bg, $color-delice-content1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &-palette{
+    font-size: 80px;
+    font-family: 'Kaushan Script', cursive;
+    background: -webkit-linear-gradient(top left,$color-palette-content1, $color-palette-bg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+}
+.menu{
+  &-chic1{
+    color: $color-chic-content1;
+  }
+  &-chic2{
+    color: $color-chic-content2;
+  }
+  &-chic3{
+    color: $color-chic-content3;
+  }
+}
+.menu-middle-content{
+  &-title-note{
+    font-family: 'Kalam', cursive;
+    font-size: 30px;
+  } 
+  &-plat-note{
+        font-family: 'Caveat', cursive;
+        font-size: 28px;
+  }
+  &-title-chic{
+    font-family: 'Gelasio', serif;
+    font-size: 29px;
+  } 
+  &-plat-chic{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+  }
+  &-title-delice{ 
+    font-size: 40px;
+  } 
+  &-plat-delice{
+        font-size: 30px;
+  }
+  &-title-palette{ 
+    font-size: 45px;
+  } 
+  &-plat-palette{
+        font-size: 30px;
+  }
+}   
+
+.fas{
+  background: -webkit-linear-gradient(top left, $couleur-texte-menuNote1, $color-note-img);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
