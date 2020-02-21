@@ -3,8 +3,15 @@
 /* ==          home menu                   */
 /*---------------------------------------- */
 
-@import "libs/minireset.css";
-@import "libs/variables.scss";
+@import "sass/libs/minireset.css";
+
+
+// main menu
+
+$color-menu-title:#fccb45;
+$color-menu-bg:#589d88; 
+$color-menu-subtitle:#031727cc;
+
 
 
 
@@ -116,7 +123,8 @@ text-decoration: none;
 /* ==          Mentions legales             */
 /*---------------------------------------- */
 .mentions-details{
-    margin: 30px auto;
+  font-size: 20px;
+    margin: 30px auto 300PX auto;
     font-family: "Roboto Condensed", sans-serif;
     text-align: justify;
     width: 80%;

@@ -1,0 +1,55 @@
+@media all and (max-width: 769px){
+    h1{
+        font-size:70px;
+    }
+    h2{
+        font-size: 2em;
+    }
+    
+    .content{
+        &-shortly{
+            font-size: 20px;
+        }
+        &-menus{
+            font-size: 20px; 
+            display: flex;
+            flex-direction: column;
+            &-figure{
+                width:100%;
+                margin-bottom: 5px 50px;
+            }
+        }
+    }
+
+    .footer-content{
+       display: flex; 
+       flex-direction: column;
+       justify-content: center;
+    } 
+    a.wiggle{
+        font-size: 30px;
+        margin: 0;
+    } 
+   
+    .menu-top-title{
+        &-delice{
+           font-size: 50PX; 
+        }
+        &-chic{
+            font-size: 50PX; 
+        }
+        &-note{
+            font-size: 50PX; 
+         }
+         &-palette{
+            font-size: 50PX; 
+         }
+    }
+   
+    .main-menu .menu-middle-content-title {
+        margin:0px;
+    } 
+    .main-menu .menu-middle-content-plat-details  {
+        margin:0px;
+    }  
+}
