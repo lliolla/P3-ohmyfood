@@ -4,12 +4,9 @@
 /* ==          home menu                   */
 /*---------------------------------------- */
 /* BODY */
-html {
-  width: 100%;
-}
-
 body {
   font-family: "Roboto Condensed", sans-serif;
+  width: 100%;
 }
 
 .container {
@@ -21,7 +18,6 @@ body {
 h1 {
   font-size: 100px;
   color: #fccb45;
-  font-weight: bolder;
   text-align: center;
   font-family: "Hind Madurai", sans-serif;
 }
