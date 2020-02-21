@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 @import url(c:\wamp64\www\2-PROJET\P3-annimations\sass\libs\minireset.css);
 /* --------------------------------------- */
 /* ==          structure menus             */
 /*---------------------------------------- */
 h3 {
   font-family: 'Hind Madurai', sans-serif;
+=======
+@import "sass/libs/minireset.css";
+/* --------------------------------------- */
+/* ==          structure menus             */
+/*---------------------------------------- */
+h2 {
+  font-family: "Hind Madurai", sans-serif;
+>>>>>>> responsive
   text-align: center;
   width: 100%;
   text-shadow: 1px 1px 1px #788a9991;
@@ -15,6 +24,7 @@ h3 {
 .main-menu {
   width: 80%;
   margin: auto;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,10 +32,15 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> responsive
   margin: 5% auto 15% auto;
   text-align: center;
   margin: 100px auto 300px auto;
 }
+<<<<<<< HEAD
 
 .main-menu .menu-top {
   margin: 50px 50px 0px 50px;
@@ -35,10 +50,19 @@ h3 {
   font-size: 100px;
 }
 
+=======
+.main-menu .menu-top {
+  margin: 50px 50px 0px 50px;
+}
+.main-menu .menu-top-img {
+  font-size: 100px;
+}
+>>>>>>> responsive
 .main-menu .menu-top-title {
   font-family: "Devonshire";
   font-size: 100px;
 }
+<<<<<<< HEAD
 
 .main-menu .menu-middle {
   display: -webkit-box;
@@ -107,15 +131,50 @@ h3 {
   text-align: start;
 }
 
+=======
+.main-menu .menu-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-menu .menu-middle-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.main-menu .menu-middle-content-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 20px 40PX;
+}
+.main-menu .menu-middle-content-plat {
+  display: flex;
+  flex-direction: column;
+}
+.main-menu .menu-middle-content-plat-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0px 80PX;
+  text-align: start;
+}
+>>>>>>> responsive
 .main-menu .menu-middle-content-plat-details-text {
   padding: 0px 0px 0px 15px;
   margin-bottom: 0PX;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> responsive
 .main-menu .menu-middle-content-plat-details-price {
   padding: 0px 15px 0px 80px;
   margin-bottom: 0PX;
 }
+<<<<<<< HEAD
 
 .main-menu .menu-bottom {
   display: -webkit-box;
@@ -130,11 +189,22 @@ h3 {
           align-items: center;
 }
 
+=======
+.main-menu .menu-bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  align-items: center;
+}
+>>>>>>> responsive
 .main-menu .menu-bottom-img {
   margin: 10px;
   font-size: 50px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> responsive
 .main-menu .menu-bottom-titre {
   font-family: "Devonshire";
   font-size: 50px;
@@ -148,129 +218,204 @@ h3.annim-title-note {
   position: relative;
   margin: 0px 20px;
 }
+<<<<<<< HEAD
 
 h3.annim-title-note::after {
   content: '';
+=======
+h3.annim-title-note::after {
+  content: "";
+>>>>>>> responsive
   position: absolute;
   display: block;
   background: #3C1218;
   width: 0;
   height: 3px;
   right: 0;
+<<<<<<< HEAD
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
 
+=======
+  transition: width 1s ease;
+}
+>>>>>>> responsive
 h3.annim-title-note:hover::after {
   width: 100%;
   left: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> responsive
 h3.annim-title-chic1 {
   position: relative;
   margin: 0px 20px;
 }
+<<<<<<< HEAD
 
 h3.annim-title-chic1::after {
   content: '';
+=======
+h3.annim-title-chic1::after {
+  content: "";
+>>>>>>> responsive
   position: absolute;
   display: block;
   background: #C77412;
   width: 0;
   height: 3px;
   right: 0;
+<<<<<<< HEAD
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
 
+=======
+  transition: width 1s ease;
+}
+>>>>>>> responsive
 h3.annim-title-chic1:hover::after {
   width: 100%;
   left: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> responsive
 h3.annim-title-chic2 {
   position: relative;
   margin: 0px 20px;
 }
+<<<<<<< HEAD
 
 h3.annim-title-chic2::after {
   content: '';
+=======
+h3.annim-title-chic2::after {
+  content: "";
+>>>>>>> responsive
   position: absolute;
   display: block;
   background: #A56799;
   width: 0;
   height: 3px;
   right: 0;
+<<<<<<< HEAD
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
 
+=======
+  transition: width 1s ease;
+}
+>>>>>>> responsive
 h3.annim-title-chic2:hover::after {
   width: 100%;
   left: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> responsive
 h3.annim-title-chic3 {
   position: relative;
   margin: 0px 20px;
 }
+<<<<<<< HEAD
 
 h3.annim-title-chic3::after {
   content: '';
+=======
+h3.annim-title-chic3::after {
+  content: "";
+>>>>>>> responsive
   position: absolute;
   display: block;
   background: #905BFD;
   width: 0;
   height: 3px;
   right: 0;
+<<<<<<< HEAD
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
 
+=======
+  transition: width 1s ease;
+}
+>>>>>>> responsive
 h3.annim-title-chic3:hover::after {
   width: 100%;
   left: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> responsive
 h3.annim-title-delice {
   position: relative;
   margin: 0px 20px;
 }
+<<<<<<< HEAD
 
 h3.annim-title-delice::after {
   content: '';
+=======
+h3.annim-title-delice::after {
+  content: "";
+>>>>>>> responsive
   position: absolute;
   display: block;
   background: #0670F3;
   width: 0;
   height: 3px;
   right: 0;
+<<<<<<< HEAD
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
 
+=======
+  transition: width 1s ease;
+}
+>>>>>>> responsive
 h3.annim-title-delice:hover::after {
   width: 100%;
   left: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> responsive
 h3.annim-title-palette {
   position: relative;
   margin: 0px 20px;
 }
+<<<<<<< HEAD
 
 h3.annim-title-palette::after {
   content: '';
+=======
+h3.annim-title-palette::after {
+  content: "";
+>>>>>>> responsive
   position: absolute;
   display: block;
   background: #72BF56;
   width: 0;
   height: 3px;
   right: 0;
+<<<<<<< HEAD
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
 
+=======
+  transition: width 1s ease;
+}
+>>>>>>> responsive
 h3.annim-title-palette:hover::after {
   width: 100%;
   left: 0;
@@ -283,6 +428,7 @@ h3.annim-title-palette:hover::after {
 .underline {
   width: 30%;
 }
+<<<<<<< HEAD
 
 .underline-note {
   border-bottom: 5PX solid rgba(60, 18, 24, 0.719);
@@ -304,6 +450,23 @@ h3.annim-title-palette:hover::after {
   border-bottom: 5PX solid #0670F3;
 }
 
+=======
+.underline-note {
+  border-bottom: 5PX solid rgba(60, 18, 24, 0.719);
+}
+.underline-chic1 {
+  border-bottom: 5PX solid #C77412;
+}
+.underline-chic2 {
+  border-bottom: 5PX solid #A56799;
+}
+.underline-chic3 {
+  border-bottom: 5PX solid #905BFD;
+}
+.underline-delice {
+  border-bottom: 5PX solid #0670F3;
+}
+>>>>>>> responsive
 .underline-palette {
   border-bottom: 5PX solid #72BF56;
 }
@@ -313,23 +476,36 @@ h3.annim-title-palette:hover::after {
   background-color: #f0967659;
   color: #3C1218;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> responsive
 .main-menu-chic {
   background-color: rgba(241, 241, 245, 0.726);
   font-family: "Roboto Condensed";
   font-weight: lighter;
   font-size: 30px;
 }
+<<<<<<< HEAD
 
 .main-menu-delice {
   font-family: 'Caveat', cursive;
+=======
+.main-menu-delice {
+  font-family: "Caveat", cursive;
+>>>>>>> responsive
   font-size: 39px;
   color: #39447c;
   background-color: #f7faff;
 }
+<<<<<<< HEAD
 
 .main-menu-palette {
   font-family: 'Caveat', cursive;
+=======
+.main-menu-palette {
+  font-family: "Caveat", cursive;
+>>>>>>> responsive
   font-size: 39px;
   color: #475e45;
   background-color: #f2fcee;
@@ -338,27 +514,44 @@ h3.annim-title-palette:hover::after {
 .menu-top-title-note {
   font-size: 60px;
 }
+<<<<<<< HEAD
 
 .menu-top-title-chic {
   font-family: 'Croissant One', cursive;
+=======
+.menu-top-title-chic {
+  font-family: "Croissant One", cursive;
+>>>>>>> responsive
   font-size: 60px;
   letter-spacing: 2px;
   background: -webkit-linear-gradient(top left, #C77412, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+<<<<<<< HEAD
 
 .menu-top-title-delice {
   font-size: 100px;
   font-family: 'Dancing Script', cursive;
+=======
+.menu-top-title-delice {
+  font-size: 100px;
+  font-family: "Dancing Script", cursive;
+>>>>>>> responsive
   background: -webkit-linear-gradient(top left, #f7faff, #0670F3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+<<<<<<< HEAD
 
 .menu-top-title-palette {
   font-size: 80px;
   font-family: 'Kaushan Script', cursive;
+=======
+.menu-top-title-palette {
+  font-size: 80px;
+  font-family: "Kaushan Script", cursive;
+>>>>>>> responsive
   background: -webkit-linear-gradient(top left, #72BF56, #dbffce);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -367,16 +560,23 @@ h3.annim-title-palette:hover::after {
 .menu-chic1 {
   color: #C77412;
 }
+<<<<<<< HEAD
 
 .menu-chic2 {
   color: #A56799;
 }
 
+=======
+.menu-chic2 {
+  color: #A56799;
+}
+>>>>>>> responsive
 .menu-chic3 {
   color: #905BFD;
 }
 
 .menu-middle-content-title-note {
+<<<<<<< HEAD
   font-family: 'Kalam', cursive;
   font-size: 30px;
 }
@@ -410,6 +610,34 @@ h3.annim-title-palette:hover::after {
 
 .menu-middle-content-plat-palette {
   font-size: 30px;
+=======
+  font-family: "Kalam", cursive;
+  font-size: 45px;
+}
+.menu-middle-content-plat-note {
+  font-family: "Caveat", cursive;
+  font-size: 35px;
+}
+.menu-middle-content-title-chic {
+  font-family: "Gelasio", serif;
+  font-size: 40px;
+}
+.menu-middle-content-plat-chic {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+}
+.menu-middle-content-title-delice {
+  font-size: 45px;
+}
+.menu-middle-content-plat-delice {
+  font-size: 35px;
+}
+.menu-middle-content-title-palette {
+  font-size: 45px;
+}
+.menu-middle-content-plat-palette {
+  font-size: 35px;
+>>>>>>> responsive
 }
 
 .fas {
@@ -417,4 +645,9 @@ h3.annim-title-palette:hover::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+<<<<<<< HEAD
 /*# sourceMappingURL=menus.css.map */
+=======
+
+/*# sourceMappingURL=menus.css.map */
+>>>>>>> responsive

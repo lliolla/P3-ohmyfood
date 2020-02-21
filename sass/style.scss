@@ -5,6 +5,20 @@
 /* ==          home menu                   */
 /*---------------------------------------- */
 
+<<<<<<< HEAD
+=======
+@import "sass/libs/minireset.css";
+
+
+// main menu
+
+$color-menu-title:#fccb45;
+$color-menu-bg:#589d88; 
+$color-menu-subtitle:#031727cc;
+
+
+
+>>>>>>> responsive
 
 /* BODY */
 html{
@@ -115,6 +129,8 @@ text-decoration: none;
 /*---------------------------------------- */
 .mentions-details{
     margin: 30px auto;
+  font-size: 20px;
+    margin: 30px auto 300PX auto;
     font-family: "Roboto Condensed", sans-serif;
     text-align: justify;
     width: 80%;
