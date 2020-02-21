@@ -1,14 +1,9 @@
 @import "sass/libs/minireset.css";
-@import "/sass/libs/variables.scss";
+
 
 /* --------------------------------------- */
 /* ==          home menu                   */
 /*---------------------------------------- */
-
-<<<<<<< HEAD
-=======
-@import "sass/libs/minireset.css";
-
 
 // main menu
 
@@ -18,12 +13,9 @@ $color-menu-subtitle:#031727cc;
 
 
 
->>>>>>> responsive
 
 /* BODY */
-html{
-  width: 100%;
-}
+
 body{
   font-family:'Roboto Condensed', sans-serif;
   width: 100%;
@@ -197,7 +189,7 @@ animation-delay: .4s;
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 472px;}
+  to{width: 40%;}
 }
 
 

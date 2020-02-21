@@ -1,16 +1,9 @@
 
 @import "sass/libs/minireset.css";
-<<<<<<< HEAD
-@import "sass/libs/variables.scss";
-=======
-
->>>>>>> responsive
 
 /* --------------------------------------- */
 /* ==          structure menus             */
 /*---------------------------------------- */
-<<<<<<< HEAD
-=======
 $color-menu-subtitle:#031727cc;
 //note menu
 $color-note-content: #3C1218;
@@ -36,7 +29,6 @@ $color-palette-bg1: rgb(242, 252, 238);
 $color-palette-content1: #72BF56;
 $color-palette-content2: rgb(71, 94, 69);
 
->>>>>>> responsive
 
 
 h2{
@@ -270,10 +262,12 @@ h3.annim-title{
 .main-menu{
     &-note{
       background-color: #f0967659;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
       color: $color-note-content;
     } 
     &-chic{
       background-color: $color-chic-bg; 
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
       font-family: "Roboto Condensed";
       font-weight: lighter;
       font-size: 30px;
@@ -283,12 +277,14 @@ h3.annim-title{
       font-size: 39px;
       color: $color-delice-content2;
       background-color:$color-delice-bg;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
     }
     &-palette{
       font-family: 'Caveat', cursive;
       font-size: 39px;
       color: $color-palette-content2;
       background-color:$color-palette-bg1;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
     }
 
 }
@@ -335,27 +331,6 @@ h3.annim-title{
 .menu-middle-content{
   &-title-note{
     font-family: 'Kalam', cursive;
-<<<<<<< HEAD
-    font-size: 30px;
-  } 
-  &-plat-note{
-        font-family: 'Caveat', cursive;
-        font-size: 28px;
-  }
-  &-title-chic{
-    font-family: 'Gelasio', serif;
-    font-size: 29px;
-  } 
-  &-plat-chic{
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-  }
-  &-title-delice{ 
-    font-size: 40px;
-  } 
-  &-plat-delice{
-        font-size: 30px;
-=======
     font-size: 45px;
   } 
   &-plat-note{
@@ -375,17 +350,12 @@ h3.annim-title{
   } 
   &-plat-delice{
         font-size: 35px;
->>>>>>> responsive
   }
   &-title-palette{ 
     font-size: 45px;
   } 
   &-plat-palette{
-<<<<<<< HEAD
-        font-size: 30px;
-=======
         font-size: 35px;
->>>>>>> responsive
   }
 }   
 

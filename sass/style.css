@@ -1,21 +1,8 @@
-<<<<<<< HEAD
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "/sass/libs/variables.scss";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   sass\style.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-=======
 @charset "UTF-8";
+@import "sass/libs/minireset.css";
 /* --------------------------------------- */
 /* ==          home menu                   */
 /*---------------------------------------- */
-@import "sass/libs/minireset.css";
 /* BODY */
 html {
   width: 100%;
@@ -23,7 +10,6 @@ html {
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  width: 100%;
 }
 
 .container {
@@ -77,15 +63,8 @@ header {
 
 a, img {
   max-width: 100%;
->>>>>>> responsive
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"/sass/libs/variables.scss\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\style.scss 2:9  root stylesheet";
 }
-<<<<<<< HEAD
-=======
 
 /* FOOTER */
 footer {
@@ -122,6 +101,7 @@ a {
 /* ==          Mentions legales             */
 /*---------------------------------------- */
 .mentions-details {
+  margin: 30px auto;
   font-size: 20px;
   margin: 30px auto 300PX auto;
   font-family: "Roboto Condensed", sans-serif;
@@ -186,7 +166,7 @@ a {
     width: 0;
   }
   to {
-    width: 472px;
+    width: 40%;
   }
 }
 /* Wiggle */
@@ -237,4 +217,3 @@ img:hover {
 }
 
 /*# sourceMappingURL=style.css.map */
->>>>>>> responsive
