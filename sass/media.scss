@@ -36,7 +36,7 @@
            font-size: 50PX; 
         }
         &-chic{
-            font-size: 50PX; 
+            font-size: 40PX; 
         }
         &-note{
             font-size: 50PX; 
@@ -46,10 +46,43 @@
          }
     }
    
-    .main-menu .menu-middle-content-title {
-        margin:0px;
-    } 
-    .main-menu .menu-middle-content-plat-details  {
-        margin:0px;
+    .main-menu .menu-middle-content{
+        &-title {
+            margin: 0PX;
+            &-delice{
+                font-size: 35px; 
+            }
+            &-chic{
+                font-size: 30px; 
+            }
+            &-note{
+                font-size: 35px; 
+            }
+            &-palette{
+                font-size: 35px; 
+            }
+        } 
+        &-plat{
+            &-delice{
+                font-size: 30px; 
+            }
+            &-chic{
+                font-size: 22px; 
+            }
+            &-note{
+                font-size: 30px; 
+            }
+            &-palette{
+                font-size: 30px; 
+            }
+
+        }
+    }
+    .main-menu .menu-middle-content-plat-details{
+        margin: 0px;
+    }  
+    .main-menu .menu-middle-content-plat-details-price  {
+
+        padding: 0px 15px 0px 15px;
     }  
 }
