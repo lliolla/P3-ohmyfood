@@ -38,6 +38,9 @@
     font-size: 25px;
     margin: 0;
   }
+  .main-menu .menu-top {
+    margin: 0px;
+  }
   .menu-top-title-delice {
     font-size: 50PX;
   }

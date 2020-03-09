@@ -31,7 +31,9 @@
         font-size: 25px;
         margin: 0;
     } 
-   
+    .main-menu .menu-top{
+        margin: 0px;
+    }
     .menu-top-title{
         &-delice{
            font-size: 50PX; 
@@ -76,14 +78,15 @@
             &-palette{
                 font-size: 30px; 
             }
+            &-details{
+                margin: 0px;
+                &-price{
+                    padding: 0px 15px 0px 15px;
+                }
+            }
+
 
         }
     }
-    .main-menu .menu-middle-content-plat-details{
-        margin: 0px;
-    }  
-    .main-menu .menu-middle-content-plat-details-price  {
-
-        padding: 0px 15px 0px 15px;
-    }  
+   
 }

@@ -1,9 +1,8 @@
-@import "sass/libs/minireset.css";
 /* --------------------------------------- */
 /* ==          structure menus             */
 /*---------------------------------------- */
 h2 {
-  font-family: "Hind Madurai", sans-serif;
+  font-family: 'Hind Madurai', sans-serif;
   text-align: center;
   width: 100%;
   text-shadow: 1px 1px 1px #788a9991;
@@ -15,69 +14,126 @@ h2 {
 .main-menu {
   width: 80%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 5% auto 15% auto;
   text-align: center;
   margin: 100px auto 300px auto;
 }
+
 .main-menu .menu-top {
   margin: 50px 50px 0px 50px;
 }
+
 .main-menu .menu-top-img {
   font-size: 100px;
 }
+
 .main-menu .menu-top-title {
   font-family: "Devonshire";
   font-size: 100px;
 }
+
 .main-menu .menu-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 .main-menu .menu-middle-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 100px;
 }
+
 .main-menu .menu-middle-content-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin: 20px 40PX;
 }
+
 .main-menu .menu-middle-content-plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .main-menu .menu-middle-content-plat-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin: 0px 80PX;
   text-align: start;
 }
+
 .main-menu .menu-middle-content-plat-details-text {
   padding: 0px 0px 0px 15px;
   margin-bottom: 0PX;
 }
+
 .main-menu .menu-middle-content-plat-details-price {
   padding: 0px 15px 0px 80px;
   margin-bottom: 0PX;
 }
+
 .main-menu .menu-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 70px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .main-menu .menu-bottom-img {
   margin: 10px;
   font-size: 50px;
 }
+
 .main-menu .menu-bottom-titre {
   font-family: "Devonshire";
   font-size: 50px;
@@ -91,106 +147,129 @@ h3.annim-title-note {
   position: relative;
   margin: 0px 20px;
 }
+
 h3.annim-title-note::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   background: #3C1218;
   width: 0;
   height: 3px;
   right: 0;
+  -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
+
 h3.annim-title-note:hover::after {
   width: 100%;
   left: 0;
 }
+
 h3.annim-title-chic1 {
   position: relative;
   margin: 0px 20px;
 }
+
 h3.annim-title-chic1::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   background: #C77412;
   width: 0;
   height: 3px;
   right: 0;
+  -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
+
 h3.annim-title-chic1:hover::after {
   width: 100%;
   left: 0;
 }
+
 h3.annim-title-chic2 {
   position: relative;
   margin: 0px 20px;
 }
+
 h3.annim-title-chic2::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   background: #A56799;
   width: 0;
   height: 3px;
   right: 0;
+  -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
+
 h3.annim-title-chic2:hover::after {
   width: 100%;
   left: 0;
 }
+
 h3.annim-title-chic3 {
   position: relative;
   margin: 0px 20px;
 }
+
 h3.annim-title-chic3::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   background: #905BFD;
   width: 0;
   height: 3px;
   right: 0;
+  -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
+
 h3.annim-title-chic3:hover::after {
   width: 100%;
   left: 0;
 }
+
 h3.annim-title-delice {
   position: relative;
   margin: 0px 20px;
 }
+
 h3.annim-title-delice::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   background: #0670F3;
   width: 0;
   height: 3px;
   right: 0;
+  -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
+
 h3.annim-title-delice:hover::after {
   width: 100%;
   left: 0;
 }
+
 h3.annim-title-palette {
   position: relative;
   margin: 0px 20px;
 }
+
 h3.annim-title-palette::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   background: #72BF56;
   width: 0;
   height: 3px;
   right: 0;
+  -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
+
 h3.annim-title-palette:hover::after {
   width: 100%;
   left: 0;
@@ -203,21 +282,27 @@ h3.annim-title-palette:hover::after {
 .underline {
   width: 30%;
 }
+
 .underline-note {
   border-bottom: 5PX solid rgba(60, 18, 24, 0.719);
 }
+
 .underline-chic1 {
   border-bottom: 5PX solid #C77412;
 }
+
 .underline-chic2 {
   border-bottom: 5PX solid #A56799;
 }
+
 .underline-chic3 {
   border-bottom: 5PX solid #905BFD;
 }
+
 .underline-delice {
   border-bottom: 5PX solid #0670F3;
 }
+
 .underline-palette {
   border-bottom: 5PX solid #72BF56;
 }
@@ -225,52 +310,62 @@ h3.annim-title-palette:hover::after {
 /* style des menus*/
 .main-menu-note {
   background-color: #f0967659;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
   color: #3C1218;
 }
+
 .main-menu-chic {
   background-color: rgba(241, 241, 245, 0.726);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
   font-family: "Roboto Condensed";
   font-weight: lighter;
   font-size: 30px;
 }
+
 .main-menu-delice {
-  font-family: "Caveat", cursive;
+  font-family: 'Caveat', cursive;
   font-size: 39px;
   color: #39447c;
   background-color: #f7faff;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
+
 .main-menu-palette {
-  font-family: "Caveat", cursive;
+  font-family: 'Caveat', cursive;
   font-size: 39px;
   color: #475e45;
   background-color: #f2fcee;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
 
 .menu-top-title-note {
   font-size: 60px;
 }
+
 .menu-top-title-chic {
-  font-family: "Croissant One", cursive;
+  font-family: 'Croissant One', cursive;
   font-size: 60px;
   letter-spacing: 2px;
   background: -webkit-linear-gradient(top left, #C77412, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .menu-top-title-delice {
   font-size: 100px;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   background: -webkit-linear-gradient(top left, #f7faff, #0670F3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .menu-top-title-palette {
   font-size: 80px;
-  font-family: "Kaushan Script", cursive;
+  font-family: 'Kaushan Script', cursive;
   background: -webkit-linear-gradient(top left, #72BF56, #dbffce);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -279,38 +374,47 @@ h3.annim-title-palette:hover::after {
 .menu-chic1 {
   color: #C77412;
 }
+
 .menu-chic2 {
   color: #A56799;
 }
+
 .menu-chic3 {
   color: #905BFD;
 }
 
 .menu-middle-content-title-note {
-  font-family: "Kalam", cursive;
+  font-family: 'Kalam', cursive;
   font-size: 45px;
 }
+
 .menu-middle-content-plat-note {
-  font-family: "Caveat", cursive;
+  font-family: 'Caveat', cursive;
   font-size: 35px;
 }
+
 .menu-middle-content-title-chic {
-  font-family: "Gelasio", serif;
+  font-family: 'Gelasio', serif;
   font-size: 40px;
 }
+
 .menu-middle-content-plat-chic {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 32px;
 }
+
 .menu-middle-content-title-delice {
   font-size: 45px;
 }
+
 .menu-middle-content-plat-delice {
   font-size: 35px;
 }
+
 .menu-middle-content-title-palette {
   font-size: 45px;
 }
+
 .menu-middle-content-plat-palette {
   font-size: 35px;
 }
@@ -320,5 +424,4 @@ h3.annim-title-palette:hover::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 /*# sourceMappingURL=menus.css.map */
