@@ -281,6 +281,7 @@ a {
 /* ne pas depasser le cadre */
 figure {
   overflow: hidden;
+  margin: 0px;
 }
 
 img {

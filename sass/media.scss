@@ -15,8 +15,8 @@
             display: flex;
             flex-direction: column;
             &-figure{
-                width:100%;
-                margin-bottom: 5px 50px;
+                width:95%;
+                margin: 8px ;
             }
         }
     }
@@ -31,9 +31,15 @@
         font-size: 25px;
         margin: 0;
     } 
-    .main-menu .menu-top{
-        margin: 0px;
+    .main{
+        margin: 7px;
+        &-menu {
+            margin: 0px;
+            width: 100%;
+        }
+
     }
+    
     .menu-top-title{
         &-delice{
            font-size: 50PX; 
@@ -49,7 +55,7 @@
          }
     }
    
-    .main-menu .menu-middle-content{
+    .menu-middle-content{
         &-title {
             margin: 0PX;
             &-delice{
@@ -78,15 +84,15 @@
             &-palette{
                 font-size: 30px; 
             }
-            &-details{
-                margin: 0px;
-                &-price{
-                    padding: 0px 15px 0px 15px;
-                }
-            }
-
-
         }
     }
-   
+    .main-menu .menu-middle-content-plat-details{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        &-price{
+            padding:15px 15px 15px 15px;
+            margin: 0px;
+        }
+    }
 }

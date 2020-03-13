@@ -19,8 +19,8 @@
             flex-direction: column;
   }
   .content-menus-figure {
-    width: 100%;
-    margin-bottom: 5px 50px;
+    width: 95%;
+    margin: 8px;
   }
   .footer-content {
     display: -webkit-box;
@@ -38,8 +38,12 @@
     font-size: 25px;
     margin: 0;
   }
-  .main-menu .menu-top {
+  .main {
+    margin: 7px;
+  }
+  .main-menu {
     margin: 0px;
+    width: 100%;
   }
   .menu-top-title-delice {
     font-size: 50PX;
@@ -53,38 +57,46 @@
   .menu-top-title-palette {
     font-size: 50PX;
   }
-  .main-menu .menu-middle-content-title {
+  .menu-middle-content-title {
     margin: 0PX;
   }
-  .main-menu .menu-middle-content-title-delice {
+  .menu-middle-content-title-delice {
     font-size: 35px;
   }
-  .main-menu .menu-middle-content-title-chic {
+  .menu-middle-content-title-chic {
     font-size: 30px;
   }
-  .main-menu .menu-middle-content-title-note {
+  .menu-middle-content-title-note {
     font-size: 35px;
   }
-  .main-menu .menu-middle-content-title-palette {
+  .menu-middle-content-title-palette {
     font-size: 35px;
   }
-  .main-menu .menu-middle-content-plat-delice {
+  .menu-middle-content-plat-delice {
     font-size: 30px;
   }
-  .main-menu .menu-middle-content-plat-chic {
+  .menu-middle-content-plat-chic {
     font-size: 22px;
   }
-  .main-menu .menu-middle-content-plat-note {
+  .menu-middle-content-plat-note {
     font-size: 30px;
   }
-  .main-menu .menu-middle-content-plat-palette {
+  .menu-middle-content-plat-palette {
     font-size: 30px;
   }
   .main-menu .menu-middle-content-plat-details {
     margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .main-menu .menu-middle-content-plat-details-price {
-    padding: 0px 15px 0px 15px;
+    padding: 15px 15px 15px 15px;
+    margin: 0px;
   }
 }
 /*# sourceMappingURL=media.css.map */
